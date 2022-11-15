@@ -1,0 +1,113 @@
+<h1 id="html-hypertext-markup-language-">HTML(hypertext markup language)</h1>
+<ul>
+<li>Não é uma linguagem de programação, é uma linguagem com links embutidos</li>
+<li>Comentários em hypertext:<pre><code><span class="hljs-comment">&lt;!--
+(estrutura de comentários em hypertext)
+--&gt;</span>
+</code></pre></li>
+</ul>
+<h1 id="tags">Tags</h1>
+<h2 id="tags-s-o-usadas-elementos-usado-para-informar-ao-navegador-a-estrutura-do-site-">Tags são usadas elementos usado para informar ao navegador a estrutura do site.</h2>
+<ul>
+<li>Sempre dentro dos sinais de chevron &lt;&gt;;</li>
+<li>Tags com abertura e fechamento possuem a seguinte estrutura: <tag> Hypertext </tag>;</li>
+<li>Tags que não precisam de abertura possuem como estrutura apenas: <tag/>.</li>
+</ul>
+<h2 id="atributos-">Atributos:</h2>
+<ul>
+<li><p>Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os atributos são utilizados para atribuir uma classe ou id a um elemento.</p>
+</li>
+<li><p>A maioria das tags tem seus próprios atributos. Contudo, existem alguns atributos genéricos que podem ser utilizados na maioria das tags HTML:</p>
+<pre><code>class=”…“ – Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);
+id=”…“ – Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);
+style=”…” – Permite incluir elementos CSS (estilos) dentro da tag;
+lang=”…” – Define o idioma principal do elemento;
+title=”…” – Define o título do elemento;
+alt=”…” – Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas de SEO;
+hidden – Oculta o elemento;
+align=”…” – Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center, left e justify;
+width=”…” – Define uma largura para o elemento;
+height=”…” – Define uma altura para o elemento.
+</code></pre></li>
+</ul>
+<h2 id="tags-b-sicas-da-estrutura-de-um-html">Tags básicas da estrutura de um html</h2>
+<pre><code><span class="hljs-tag">&lt;!DOCTYPE html&gt;</span> – A <span class="hljs-keyword">tag</span> <span class="hljs-title">!DOCTYPE</span> <span class="hljs-literal">inf</span>orma ao navegador a versão do HTML que está sendo utilizada no documento. 
+<span class="hljs-tag">&lt;html&gt;</span>  – Esta <span class="hljs-keyword">tag</span> <span class="hljs-title">é o</span> elemento básico da estrutura do HTML. Assim sendo, ela conterá todos os elementos do  documento. Todo documento HTML deve iniciar e finalizar com essa <span class="hljs-keyword">tag</span>;
+<span class="hljs-tag">&lt;head&gt;</span><span class="hljs-tag">&lt;/head&gt;</span> – Essa <span class="hljs-keyword">tag</span> <span class="hljs-title">delimita</span> o cabeçalho do documento. Não possui nenhum valor visível, porém é capaz de transmitir ao navegador diversas <span class="hljs-literal">inf</span>ormações muito úteis e essenciais a uma boa apresentação do documento HTML;
+<span class="hljs-tag">&lt;title&gt;</span><span class="hljs-tag">&lt;/title&gt;</span> – Essa <span class="hljs-keyword">tag</span> <span class="hljs-title">define</span> o título da sua página, o nome que aparecerá na aba, janela ou guia.
+<span class="hljs-tag">&lt;meta/&gt;</span> – Essa <span class="hljs-keyword">tag</span> <span class="hljs-title">permite</span> inserir metadados ao documento, como por exemplo a <span class="hljs-keyword">tag</span> <span class="hljs-title">&lt;meta</span> <span class="hljs-attr">charset=</span><span class="hljs-string">"utf-8"</span>/&gt;, que garante a compatibilidade do código com os caracteres de padrão latino americano;
+<span class="hljs-tag">&lt;body&gt;</span><span class="hljs-tag">&lt;/body&gt;</span> – Finalmente, a <span class="hljs-keyword">tag</span> <span class="hljs-title">que</span> representa o corpo do documento. Em síntese, é nessa <span class="hljs-keyword">tag</span> <span class="hljs-title">que</span> todos os elementos visíveis do site devem ser inseridos.
+</code></pre><h2 id="tags-html-de-t-tulo">Tags HTML de título</h2>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span> - Título de maior valor hierárquico
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span> - Título de menor valor hierárquico
+</code></pre><h2 id="tags-html-de-texto">Tags HTML de texto</h2>
+<pre><code>&lt;p&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span> – Principal tag de texto, compõe um parágrafo;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span> – Funcionalidade e características parecidas com os parágrafos, porém são utilizadas apenas para pequenas informações;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></span> – Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span> – Transforma o conteú<span class="hljs-keyword">do</span> em negrito;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></span> – Transforma o conteú<span class="hljs-keyword">do</span> em itálico;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span></span> – Essa tag não necessita de fechamento, ela executa a função de quebra de linha.
+&lt;hr/&gt; – Essa tag não necessita de fechamento, ela forma uma linha horizontal.
+</code></pre><h2 id="tags-html-estruturais">Tags HTML estruturais</h2>
+<pre><code>&lt;header&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></span> – Essas tags definem um cabeçalho. Portanto, todo conteú<span class="hljs-keyword">do</span> que estiver dentro dela faz parte de um cabeçalho, podendo ser utilizado dentro de outras sessões. Não confundir com <span class="hljs-keyword">as</span> tags &lt;head&gt;;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></span> – Essas tags representam o conteú<span class="hljs-keyword">do</span> principal <span class="hljs-keyword">do</span> corpo, ou seja, o conteú<span class="hljs-keyword">do</span> relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span></span> – Essas tags definem um rodapé para a página, geralmente utilizadas no final da página;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span> – Essas tags definem uma sessão para uma página;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></span> – Essas tags definem um artigo da página. Nesse sentido, são utilizadas para separar o conteú<span class="hljs-keyword">do</span> da sua página. Muito utilizado principalmente por blogs ou páginas de conteú<span class="hljs-keyword">do</span>;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span></span> – Essas tags representam uma seção de uma página cujo conteú<span class="hljs-keyword">do</span> é tangencialmente relacionado ao conteú<span class="hljs-keyword">do</span> <span class="hljs-keyword">do</span> seu entorno, que poderia ser considerado separado <span class="hljs-keyword">do</span> conteú<span class="hljs-keyword">do</span>;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></span> – Essa tag define um conteú<span class="hljs-keyword">do</span> de navegação. Portanto, é muito utilizado em conjunto com listas e na criação de menus;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span> – Define uma divisão da página. Desta forma, funciona como um container para conteú<span class="hljs-keyword">do</span> de fluxo. Uma vez que não possui um valor semântico, é muito utilizado para organizar melhor o conteú<span class="hljs-keyword">do</span>.
+</code></pre><h2 id="tag-de-link-html">Tag de link HTML</h2>
+<ul>
+<li>A tag de link HTML é responsável por fazer a ligação entre um documento e outro, sendo ele da mesma página ou de uma página de outro domínio.</li>
+<li><p>Para realizar um link, podemos chamar as tags <a></a> com o atributo href. Por exemplo, caso você queira criar um link no seu texto que redirecione à página inicial do google escreva:</p>
+<p><code>&lt;p&gt;Para acessar o Google, &lt;a href=&quot;https://www.google.com&quot;&gt;clique aqui.&lt;/a&gt;&lt;/p&gt;</code></p>
+</li>
+</ul>
+<h2 id="tags-html-de-multim-dia">Tags HTML de multimídia</h2>
+<ul>
+<li><p>Img</p>
+<ul>
+<li><p>Essa tag não necessita de fechamento, serve para incluir uma imagem ao seu texto. A partir dessa tag, utilizamos o atributo src=”” onde deve ser digitado o local em que a imagem se encontra. Também é muito utilizado em conjunto com o atributo alt para definir o texto alternativo da imagem.</p>
+</li>
+<li><p>Por exemplo: 
+<code>&lt;img src=&quot;imagens/imagem1.jpg&quot; alt=&quot;imagem 1 da minha página&quot;&gt;</code></p>
+</li>
+</ul>
+</li>
+<li><p>Video e Audio</p>
+<ul>
+<li>Essa tag serve para indicar a inserção de um vídeo. Com isso, devemos colocar alguns atributos dentro da tag para poder ativar o controle, a principal dela é o controls. Posteriormente, incluímos a tag <source> com os atributos src e type, onde receberão o local em que está o vídeo e o tipo do vídeo. </li>
+<li>É recomendado utilizar mais de um tipo de source do mesmo vídeo, para garantir maior possibilidade de compatibilidade com o navegador. Finalmente, podemos incluir uma mensagem que será renderizada apenas se o navegador do usuário não suportar a tag video.</li>
+<li>Por exemplo: </li>
+</ul>
+<pre><code>  <span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"video.mp4"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"video/mp4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"video.ogg"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"video/ogg"</span>&gt;</span>
+     Seu navegador não possui suporte para Vídeos.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span>
+</code></pre><ul>
+<li>A tag Audio funciona da mesma forma que a tag Video, portanto, utilizamos a tag Source dentro dela. Vejamos o exemplo a seguir:</li>
+</ul>
+<pre><code>  <span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"musica.ogg"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"audio/ogg"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"musica.mp3"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"audio/mpeg"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    Seu navegador não possui suporte para áudio.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>&gt;</span>
+</code></pre></li>
+<li><p>Iframe</p>
+<ul>
+<li><p>Os iframes são muito utilizados na atualidade, servem para incluir recursos de uma outra página nesta página. Vale a pena conferir o exemplo da W3C Schools, pagina de tutorias pertencente ao grupo W3C, a organização atualmente responsável pelos padrões da web.</p>
+</li>
+<li><p>Portanto, para inserir um iframe, basta utilizar a tag com o atributo src. Além disso, é possível incluir um texto dentro do elemento, caso o navegador do usuário não possua suporte para tal. Vejamos então o exemplo abaixo:</p>
+</li>
+</ul>
+<pre><code>  <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.homehost.com.br"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Seu navegador não possui suporte para iFrames.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+</code></pre></li>
+</ul>
