@@ -1,4 +1,4 @@
-# [Voltar](CSS.md)
+# [Voltar](../CSS.md)
 
 # Estrutura do CSS
   * Anatomia:
