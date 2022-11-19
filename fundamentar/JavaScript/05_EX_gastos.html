@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type = "text/javascript" src="05_EX_gastos.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos</title>
+</head>
+<body>
+
+    <script>
+    var numIncome = parseInt(prompt('Informe o numero de receitas geradas: '));    
+    let family = {
+        income: [],
+        expenses: []
+    }
+    let aux = 0
+    for (aux; aux < numIncome; aux++){
+        family.income[aux] = parseInt(prompt('Receita número ' + (aux+1) +': '));
+    }
+
+
+    var numExpenses = parseInt(prompt('Informe o numero de despesas geradas: '));    
+    let expenses
+    aux = 0
+    for (aux; aux < numExpenses; aux++){
+        family.expenses[aux] = parseInt(prompt('Receita número ' + (aux+1) +': '));
+    }
+    </script>
+
+    <input type="button" onclick="calcBalance(family.income, family.expenses)" value="Clique aqui para ver o seu saldo">
+
+</body>
+</html>
