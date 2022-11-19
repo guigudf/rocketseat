@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type = "text/javascript" src="07_EX_array.js"></script>
+    <style>
+        select[id=authorSelect]{
+            width: 140px;
+            padding: 0px 2px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+        }
+        input[type=button]{
+            margin: 8px 10px;
+            box-sizing: border-box;
+            display: inline;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Livros</title>
+</head>
+<body>
+    <input type="button" onclick="totalOfCategories()" value="Total de categorias no acervo">
+
+    <input type="button" onclick="totalOfBooksCategories()" value="Total de livros por categoria">
+
+    <input type="button" onclick="counterAutors()" value="Total de autores no acervo">
+    <br>
+    <br>
+    <label for="authorSelect">Livros por autor:</label>
+    <select name="author" id="authorSelect" >
+        <option value="T. Harv Eker">T. Harv Eker</option>
+        <option value="George S. Clason">George S. Clason</option>
+        <option value="Robert T. Kiyosaki e Sharon L. Lechter">Robert T. Kiyosaki e Sharon L. Lechter</option>
+        <option value="Augusto Cury">Augusto Cury</option>
+        <option value="Stephen R. Covey">Stephen R. Covey</option>
+        <input type="button" onclick="booksByAuthor(authorSelect.value)" value="Pesquisar">
+    </select>
+   
+
+</body>
+</html>
