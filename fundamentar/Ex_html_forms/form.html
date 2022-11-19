@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="contato" action="">
+        <label for="nome">Nome completo:</label>
+        <input type="nome" type="text">
+        <button type="reset" value="">Clear</button>
+        <button type="submit">Enviar</button>
+        <button disabled>RED BUTTON!</button>
+    </form>
+
+    <fieldset form="contato" name="input-contato">
+        <legend>Contato :)</legend>
+        <label for="">Nome:</label>
+        <input type="text">
+    </fieldset>
+
+    <input type="text" list="Esporte" placeholder="Escreva um Esporte"/>
+    
+    <datalist id="Esporte">
+        <option value="Basquete"></option>
+        <option value="Futebol"></option>
+        <option value="Vôlei"></option>
+        <option value="Natação"></option>
+        <option value="Xadrez"></option>
+    </datalist>
+
+    <label for="esporteSelect">Escolha um Esporte:</label>
+    <select name="esporteType" id="esporteSelect">
+        <option value="Basquete">Basquete</option>
+        <option value="Futebol">Futebol</option>
+        <option value="Vôlei">Vôlei</option>
+        <option value="Natação">Natação</option>
+        <option value="Xadrez">Xadrez</option>
+    </select>
+
+
+    <fieldset>
+        <legend>Login</legend>
+        <form action="">
+            <input type="email" 
+                placeholder="Digite seu e-mail"
+                size="20"
+            >
+        
+            <input type="password" 
+                pattern="[0-9a-fA-F]{8}" 
+                title="Informe uma senha de 8 dígitos"
+                placeholder="Digite sua senha"
+            >
+            <button type="submit">Entrar</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informe seu gêneros favoritos de música</legend>
+        <div>
+            <input type="checkbox" name="pop" id="music"
+            value="pop">
+            <label for="pop">Pop</label>
+        </div>
+        <div>
+            <input type="checkbox" name="rock" id="music"
+            value="rock">
+            <label for="rock">Rock</label>
+        </div>
+        <div>
+            <input type="checkbox" name="funk" id="music"
+            value="funk">
+            <label for="funk">Funk</label>
+        </div>
+        <div>
+            <input type="checkbox" name="mpb" id="music"
+            value="mpb">
+            <label for="mpb">MPB</label>
+        </div>
+        <div>
+            <input type="checkbox" name="rap" id="music"
+            value="rap">
+            <label for="rap">Rap</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Essa página está lotada de informações?</legend>
+
+        <label for="lotada-sim">Sim</label>
+        <input type="radio" id="lotada-sim" name="lotada">
+
+        <label for="lotada-nao">Não</label>
+        <input type="radio" id="lotada-nao" name="lotada">
+
+    </fieldset>
+
+    <label>Informe seu jogos favoritos:
+        <br>
+        <select name="favGames" multiple size="10">
+            <optgroup label="RPG">
+                <option value="zelda">Legend of Zelda</option>
+                <option value="pokemon">Pokemon</option>
+                <option value="mana">Trials of Mana</option>
+            </optgroup>
+            <optgroup label="FPS">
+                <option value="cs">Counter-Strike</option>
+                <option value="overwatch">Overwatch</option>
+                <option value="valorant">Valorant</option>
+            </optgroup>
+            <optgroup label="Fight">
+                <option value="streetFighter">Street Fighter</option>
+                <option value="tekken">Tekken</option>
+                <option value="kof">King of Fighters</option>
+            </optgroup>
+        </select>
+    </label>
+    <br>
+    <input type="range" min="1" max="100">
+    
+    <input type="date" name="nascimento">
+</body>
+</html>

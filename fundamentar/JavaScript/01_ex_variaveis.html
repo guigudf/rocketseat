@@ -1,0 +1,46 @@
+<script>
+    var weight 
+    console.log(typeof weight) // variável do tipo undefined
+
+    let name, age, stars, isSubscribed
+
+    name = "John"
+    age = 18
+    stars = 35.8
+    isSubscribed = false
+
+    //let student = {}
+    //console.log(typeof student) // variável do tipo object
+
+    let student = {
+        name: "Amanda",
+        age: 20,
+        weight: 68.9,
+        isSubscribed: true
+    }
+
+    console.log(`${student.name} de idade ${student.age} pesa ${student.weight} kg.`)
+
+    let students = []
+
+    students =[
+        student
+    ]
+
+    console.log(students)
+    console.log(students[0])
+
+    let Rob = {
+        name: "Rob",
+        age: 18,
+        weight: 88.0,
+        isSubscribed: false
+    }
+
+    students[1] = Rob
+
+    console.log(a) //erro pois ainda não foi criada.
+    var a = 1   // Correção: a criação da variável 'sobe' de linha mas não o valor atribuido,
+                // logo aparece com undefined
+
+</script>

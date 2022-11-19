@@ -1,0 +1,36 @@
+<script>
+    var name, especie
+    name = "Guilherme"
+    console.log(typeof name)
+    console.log(name)
+
+    let age, isHuman 
+    
+    age = 24
+    isHuman = true
+
+    if (isHuman){
+        especie = "humano";
+    }
+    else{
+        especie = "alienígena"
+    }
+
+    console.log(name, age, isHuman)
+
+    console.log(name + ' tem ' + age + ' anos')
+
+    console.log(`${name} é um ${especie}`)
+
+    const person = {
+        name: "Legolas",
+        age: 2931,
+        weight: 78.8,
+        race: "elf",
+        isAdmin: true
+    }
+
+    console.log(person)
+
+    console.log(`${person.name} é um ${person.race} de ${person.age} anos, que pesa ${person.weight} kilos.`)
+</script>
