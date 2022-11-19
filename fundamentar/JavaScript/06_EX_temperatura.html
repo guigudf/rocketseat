@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         input[id=transformar] {
+            width: 35px;
+            padding: 0px 2px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+        }
+    </style>
+    <script type = "text/javascript" src="06_EX_temperatura.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+</head>
+<body>
+    <fieldset form="tempChange" name="tempChange">
+        <legend>Transformador de Temperatura</legend>
+        <em>
+            Digite a temperatura seguida de C para Celsius ou F para Fahrenheit. 
+            <br> 
+            Exemplo: 90F
+        </em> 
+        <br>
+        <label for="">Temperatura:</label>
+        <input type="text" id="transformar">
+
+        <input type="button" onclick="transformTemp('transformar')" value="Transformar">
+        <br>
+        
+    </fieldset>
+</body>
+</html>
